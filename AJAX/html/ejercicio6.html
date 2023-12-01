@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../javascript/ejercicio6.js"></script>
+</head>
+<body>
+    <form id="clienteForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre"><br>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos"><br>
+
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni"><br>
+
+        <label for="fechaNac">Fecha de Nacimiento (dd/mm/aaaa):</label>
+        <input type="text" id="fechaNac"><br>
+
+        <label>Sexo:</label>
+        <input type="radio" id="sexoM" name="sexo" value="M">
+        <label for="sexoM">Mujer</label>
+        <input type="radio" id="sexoH" name="sexo" value="H">
+        <label for="sexoH">Hombre</label><br>
+
+        <label>Preferencias:</label>
+        <input type="checkbox" id="ext" name="preferencias" value="ext">
+        <label for="ext">Deportes de exterior</label>
+        <input type="checkbox" id="equi" name="preferencias" value="equi">
+        <label for="equi">Deportes de equipo</label>
+        <input type="checkbox" id="indv" name="preferencias" value="indv">
+        <label for="indv">Deportes individuales</label>
+        <input type="checkbox" id="int" name="preferencias" value="int">
+        <label for="int">Deportes de interior</label><br>
+
+        <button type="button" id="registrarCliente" onclick="crearCliente()">Registrar Cliente</button>
+        <button type="button" id="actualizarCliente" onclick="actualizaCliente()">Actualizar Cliente</button>
+        <button type="button" id="borrarCliente" onclick="borraCliente()">Borrar Cliente</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre y Apellidos</th>
+                <th>Fecha Nacimiento</th>
+                <th>Sexo</th>
+            </tr>
+        </thead>
+        <tbody id="clientesList"></tbody>
+    </table>
+</body>
+</html>

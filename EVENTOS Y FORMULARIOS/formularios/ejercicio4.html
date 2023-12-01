@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <script src="./js/ejercicio4.js"></script>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="" id="Formulario1" method="post">
+        <input type="text" id="tlfn"/><br>
+        <label for="franjaHoraria">Franja horaria:</label><br>
+        <input type="checkbox" id="franja1" name="franjaHoraria" value="6-14">
+        <label for="franja1">6:00 a 14:00</label><br>
+        <input type="checkbox" id="franja2" name="franjaHoraria" value="14-20">
+        <label for="franja2">14:00 a 20:00</label><br>
+        <input type="checkbox" id="franja3" name="franjaHoraria" value="20-1">
+        <label for="franja3">20:00 a 01:00</label><br><br>
+
+        <label for="tipoCliente">Tipo de cliente:</label><br>
+        <input type="radio" id="prepago" name="tipoCliente" value="prepago">
+        <label for="prepago">Prepago</label><br>
+        <input type="radio" id="postpago" name="tipoCliente" value="postpago">
+        <label for="postpago">Postpago</label><br><br>
+
+        <label for="compania">Compañía de teléfono:</label><br>
+        <select id="compania" name="compania">
+            <option value="comp1">Compañía 1</option>
+            <option value="comp2">Compañía 2</option>
+            <option value="comp3">Compañía 3</option>
+            <option value="comp4">Compañía 4</option>
+            <option value="comp5">Compañía 5</option>
+        </select><br><br>
+
+        <label for="observaciones">Observaciones (máx. 140 caracteres):</label><br>
+        <textarea id="observaciones" name="observaciones" maxlength="140"></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+</body>
+</html>
